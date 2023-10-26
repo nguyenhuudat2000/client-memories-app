@@ -1,0 +1,60 @@
+#form {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+  padding: 30px;
+}
+.icon-close {
+  position: absolute;
+  background: transparent;
+  border: none;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+#form-title {
+  margin-top: 0;
+  color: black;
+  font-weight: normal;
+  font-size: 36px;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.user-input {
+  background-color: white;
+  border: 2px rgba(128, 128, 128, 0.3) solid;
+  padding: 8px;
+  border-radius: 10px;
+  width: 95%;
+  text-indent: 18px;
+  font-size: 18px;
+}
+.user-input-label {
+  color: black;
+  background-color: white;
+  font-size: 14px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+}
+.submit {
+  background-color: rgb(1, 183, 255);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+.input-image {
+  margin-bottom: 20px;
+}
+.input-image label {
+  display: block;
+  font-size: 11px;
+  color: black;
+}

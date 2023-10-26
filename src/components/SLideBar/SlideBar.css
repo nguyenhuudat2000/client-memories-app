@@ -1,0 +1,132 @@
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  padding: 30px 0px 0 15px;
+  border-right: 1px solid rgba(128, 128, 128, 0.3);
+}
+.brand-name {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.brand-name .logo {
+  width: 103px;
+  color: black;
+}
+.brand-name svg {
+  display: none;
+}
+
+.link-logo {
+  margin-bottom: 20px;
+}
+.link-logo a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: black;
+  font-size: 16px;
+}
+
+.side-bar .link-logo svg {
+  font-size: 35px;
+}
+
+.button-create {
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-logout {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: black;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button-logout svg {
+  font-size: 35px;
+}
+
+.bottom-navbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  z-index: -1;
+}
+
+.bottom-link {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .side-bar {
+    width: 55px;
+  }
+  .logo {
+    display: none;
+  }
+  .brand-name svg {
+    display: block;
+    font-size: 33.6px;
+    padding-left: 2px;
+  }
+  .link-logo span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .side-bar {
+    display: none;
+  }
+  .bottom-navbar {
+    display: flex;
+    background-color: white;
+    border-right: 1px solid rgba(128, 128, 128, 0.3);
+    z-index: 2;
+  }
+  .bottom-link {
+    display: flex;
+  }
+  .bottom-link a {
+    color: black;
+  }
+  .bottom-link svg {
+    font-size: 35px;
+  }
+  .bottom-link button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
